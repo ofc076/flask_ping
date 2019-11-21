@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    font-weight: bold;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+table {
+    width: 100%;
+    /*font-size: xx-large;*/
+    font-size: 5.5vh;
+
+}
+.col_ok {
+    text-align: right;
+    color: green;
+}
+td {
+  width: 50%;
+}
+.blink_me {
+    animation: blinker 1s linear infinite;
+    color: red;
+    background-color: white;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/static/pingstyle.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+<table>
+{% for i in content_arr %}
+    <tr>
+        {% if i.status %}
+        <td class="col_ok">
+        {{ i.name }}
+        </td>
+        <td>
+        </td>
+        {% else %}
+        <td class="col_ok">
+        </td>
+        <td class="blink_me">
+        {{ i.name }}
+        </td>
+        {% endif %}
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>
